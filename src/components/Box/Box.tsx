@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import {
   space,
   color,
@@ -17,10 +17,10 @@ import {
   ShadowProps,
   TypographyProps,
   PositionProps,
-} from 'styled-system';
+} from "styled-system";
 
 export interface BoxProps
-  extends React.HTMLAttributes<HTMLDivElement>,
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, "color">,
     SpaceProps,
     ColorProps,
     LayoutProps,
@@ -51,7 +51,7 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
         {children}
       </StyledBox>
     );
-  }
+  },
 );
 
-Box.displayName = 'Box';
+Box.displayName = "Box";
