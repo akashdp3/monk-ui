@@ -55,3 +55,4 @@ export const Box = React.forwardRef<HTMLDivElement, BoxProps>(
 );
 
 Box.displayName = "Box";
+export default Box;

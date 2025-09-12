@@ -1,4 +1,4 @@
-import { colors } from '../tokens/colors';
+import { colors } from "../tokens/colors";
 
 export const darkTheme = {
   colors: {
@@ -29,9 +29,9 @@ export const darkTheme = {
       primary: colors.primary[400],
       primaryHover: colors.primary[300],
       primaryActive: colors.primary[200],
-      secondary: colors.secondary[400],
-      secondaryHover: colors.secondary[300],
-      secondaryActive: colors.secondary[200],
+      secondary: colors.neutral[400],
+      secondaryHover: colors.neutral[300],
+      secondaryActive: colors.neutral[200],
     },
 
     // Semantic colors
@@ -40,8 +40,8 @@ export const darkTheme = {
       successBg: colors.success[900],
       warning: colors.warning[400],
       warningBg: colors.warning[900],
-      error: colors.error[400],
-      errorBg: colors.error[900],
+      error: colors.danger[400],
+      errorBg: colors.danger[900],
     },
   },
 };

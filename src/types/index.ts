@@ -5,7 +5,7 @@ export interface BaseProps {
 
 export interface ComponentProps extends BaseProps {
   variant?: string;
-  size?: 'sm' | 'md' | 'lg';
+  size?: "sm" | "md" | "lg";
   disabled?: boolean;
 }
 export type ColorScale = {

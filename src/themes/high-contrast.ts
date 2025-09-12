@@ -1,4 +1,4 @@
-import { colors } from '../tokens/colors';
+import { colors } from "../tokens/colors";
 
 export const highContrastTheme = {
   colors: {
@@ -29,9 +29,9 @@ export const highContrastTheme = {
       primary: colors.primary[700],
       primaryHover: colors.primary[800],
       primaryActive: colors.primary[900],
-      secondary: colors.secondary[700],
-      secondaryHover: colors.secondary[800],
-      secondaryActive: colors.secondary[900],
+      secondary: colors.neutral[700],
+      secondaryHover: colors.neutral[800],
+      secondaryActive: colors.neutral[900],
     },
 
     // Semantic colors (more pronounced)
@@ -40,8 +40,8 @@ export const highContrastTheme = {
       successBg: colors.success[100],
       warning: colors.warning[700],
       warningBg: colors.warning[100],
-      error: colors.error[700],
-      errorBg: colors.error[100],
+      error: colors.danger[700],
+      errorBg: colors.danger[100],
     },
   },
 };
