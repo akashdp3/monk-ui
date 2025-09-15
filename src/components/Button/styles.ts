@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { variant } from "styled-system";
+
 import { Box } from "../Box";
-import { ButtonProps } from "./Button";
+import { ButtonProps } from "./types";
 
 export const StyledButton = styled(Box).withConfig({
   shouldForwardProp: (prop) =>
@@ -19,8 +20,7 @@ export const StyledButton = styled(Box).withConfig({
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px
-      ${(props) => props.theme.colors?.border?.focus || "#0ea5e9"};
+    box-shadow: 0 0 0 2px ${(props) => props.theme?.colors?.border?.focus};
   }
 
   &:disabled {
