@@ -1,5 +1,12 @@
 import { DefaultTheme } from "styled-components/dist/types";
-import { colors } from "../tokens/colors";
+import {
+  colors,
+  typography,
+  spacing,
+  borders,
+  shadows,
+  motion,
+} from "../tokens";
 
 const semanticColors = {
   // Background colors - hierarchical for surfaces
@@ -83,6 +90,11 @@ const semanticColors = {
 };
 
 export const lightTheme: DefaultTheme = {
+  ...typography,
+  ...spacing,
+  ...borders,
+  ...shadows,
+  ...motion,
   colors: {
     ...semanticColors,
     button: {

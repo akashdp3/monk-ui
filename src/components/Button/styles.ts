@@ -29,6 +29,27 @@ export const StyledButton = styled(Box).withConfig({
   }
 
   ${variant({
+    prop: "size",
+    variants: {
+      sm: {
+        padding: "8px 12px",
+        fontSize: "14px",
+        minHeight: "32px",
+      },
+      md: {
+        padding: "12px 16px",
+        fontSize: "16px",
+        minHeight: "40px",
+      },
+      lg: {
+        padding: "16px 24px",
+        fontSize: "18px",
+        minHeight: "48px",
+      },
+    },
+  })}
+
+  ${variant({
     variants: {
       primary: {
         backgroundColor: "button.primary.bg",
@@ -79,15 +100,16 @@ export const StyledButton = styled(Box).withConfig({
         },
       },
       link: {
+        padding: "0",
         backgroundColor: "transparent",
-        color: "brand.base",
+        color: "primary.base",
         border: "none",
         textDecoration: "underline",
         "&:hover:not(:disabled)": {
-          color: "brand.hover",
+          color: "primary.hover",
         },
         "&:active:not(:disabled)": {
-          color: "brand.active",
+          color: "primary.active",
         },
         "&:disabled": {
           color: "foreground.disabled",
@@ -140,27 +162,6 @@ export const StyledButton = styled(Box).withConfig({
           backgroundColor: "button.warning.bgDisabled",
           color: "button.warning.textDisabled",
         },
-      },
-    },
-  })}
-
-  ${variant({
-    prop: "size",
-    variants: {
-      sm: {
-        padding: "8px 12px",
-        fontSize: "14px",
-        minHeight: "32px",
-      },
-      md: {
-        padding: "12px 16px",
-        fontSize: "16px",
-        minHeight: "40px",
-      },
-      lg: {
-        padding: "16px 24px",
-        fontSize: "18px",
-        minHeight: "48px",
       },
     },
   })}
