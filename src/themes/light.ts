@@ -3,9 +3,12 @@ import {
   colors,
   typography,
   spacing,
+  sizes,
   borders,
   shadows,
   motion,
+  breakpoints,
+  zIndices,
 } from "../tokens";
 
 const semanticColors = {
@@ -91,10 +94,13 @@ const semanticColors = {
 
 export const lightTheme: DefaultTheme = {
   ...typography,
-  ...spacing,
+  space: spacing,
+  sizes,
   ...borders,
   ...shadows,
   ...motion,
+  breakpoints,
+  zIndices,
   colors: {
     ...semanticColors,
     button: {

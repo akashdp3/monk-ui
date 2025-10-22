@@ -1,6 +1,25 @@
-import { colors } from "../tokens/colors";
+import { DefaultTheme } from "styled-components/dist/types";
+import {
+  colors,
+  typography,
+  spacing,
+  sizes,
+  borders,
+  shadows,
+  motion,
+  breakpoints,
+  zIndices,
+} from "../tokens";
 
-export const highContrastTheme = {
+export const highContrastTheme: DefaultTheme = {
+  ...typography,
+  space: spacing,
+  sizes,
+  ...borders,
+  ...shadows,
+  ...motion,
+  breakpoints,
+  zIndices,
   colors: {
     // Background colors
     background: {
