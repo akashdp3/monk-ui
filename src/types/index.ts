@@ -1,4 +1,4 @@
-import { ThemeColors } from "./colors";
+import type { ThemeColors } from "./colors";
 
 export interface BaseProps {
   className?: string;
@@ -11,4 +11,4 @@ export interface ComponentProps extends BaseProps {
   disabled?: boolean;
 }
 
-export { ThemeColors };
+export type { ThemeColors };

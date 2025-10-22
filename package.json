@@ -1,5 +1,5 @@
 {
-  "name": "monk-ui",
+  "name": "@monk/ui",
   "version": "0.1.0",
   "description": "A modern, accessible design system built with TypeScript and React",
   "main": "dist/index.js",
